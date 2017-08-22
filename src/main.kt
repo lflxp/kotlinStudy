@@ -101,5 +101,14 @@ fun main(args: Array<String>) {
 //    println("年龄： ${s.age}")
 //    println("学生号： ${s.no}")
 //    println("成绩： ${s.score}")
-    var s =  Student("Runoob", 18, "S12345", 89)
+//    var s =  Student("Runoob", 18, "S12345", 89)
+
+//    var c = MyImpl()
+//    c.foo()
+//    c.bar()
+//    println(c.name)
+
+    val d = DD()
+    d.foo()
+    d.bar()
 }
