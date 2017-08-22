@@ -108,7 +108,36 @@ fun main(args: Array<String>) {
 //    c.bar()
 //    println(c.name)
 
-    val d = DD()
-    d.foo()
-    d.bar()
+//    val d = DD()
+//    d.foo()
+//    d.bar()
+
+//    var user = User("lxp")
+//    user.Print()
+
+//    val l = mutableListOf(1,2,3)
+//    // 位置 0 和 2 的值做了互换
+//    l.swap(0,2) // 'swap()' 函数内的 'this' 将指向 'l' 的值
+//    println(l.toString())
+
+//    printFoo(D())
+//    var i = I()
+//    i.fff()
+//
+//    var t = null
+//    println(t.toString())
+
+//    println("no:${Bs.no}")
+//    Bs.foo()
+
+//    val i:I = I()
+//    val ii:II = II()
+//    ii.caller(i)
+//
+//    val iii:III = III()
+//    iii.caller(i)
+
+    M2().caller(M())  // 输出 "M.foo in M2"
+    M3().caller(M())  // 输出 "M.foo in M3" —— 分发接收者虚拟解析
+    M2().caller(M1()) // 输出 "M.foo in M2" —— 扩展接收者静态解析
 }
