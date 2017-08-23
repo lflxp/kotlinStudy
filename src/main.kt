@@ -137,7 +137,79 @@ fun main(args: Array<String>) {
 //    val iii:III = III()
 //    iii.caller(i)
 
-    M2().caller(M())  // 输出 "M.foo in M2"
-    M3().caller(M())  // 输出 "M.foo in M3" —— 分发接收者虚拟解析
-    M2().caller(M1()) // 输出 "M.foo in M2" —— 扩展接收者静态解析
+//    M2().caller(M())  // 输出 "M.foo in M2"
+//    M3().caller(M())  // 输出 "M.foo in M3" —— 分发接收者虚拟解析
+//    M2().caller(M1()) // 输出 "M.foo in M2" —— 扩展接收者静态解析
+
+//    val jack = User8(name = "Jack",age=1)
+//
+//    val oldjack = jack.copy(age=8)
+//    println(jack)
+//    println(oldjack)
+
+//    val jane = User8("jane",35)
+//    val (name,age) = jane
+//    println("$name,$age years of age")
+
+//    var boxInt = Box9<Int>(10)
+//    var boxString = Box9<String>("lxp")
+//    println(boxInt.value)
+//    println(boxString.value)
+
+//    val age = 23
+//    val name = "runoob"
+//    val bool = true
+//
+//    doPrintln(age)    // 整型
+//    doPrintln(name)   // 字符串
+//    doPrintln(bool)   // 布尔型
+
+//    var color:Color = Color.BLUE
+//    println(Color.values())
+//    println(Color.valueOf("RED"))
+//    println(color.name)
+//    println(color.ordinal)
+
+//    var data1 = DataProviderManager
+//    var data2 = DataProviderManager
+//    data1.name = "test"
+//    print("data1 name = ${data2.name}")
+
+//    val b = BaseImpl12(10)
+//    Derived12(b).print()
+
+//    val user = User12()
+//    user.name = "第一次赋值"
+//    user.name = "第二次赋值"
+
+//    val site = Site12(mapOf(
+//            "name" to "lixueping",
+//            "url" to "www.baidu.com"
+//    ))
+//
+//    //读取映射值
+//    println(site.name)
+//    println(site.url)
+//
+//    var map:MutableMap<String,Any?> = mutableMapOf(
+//            "name" to "李学坪",
+//            "url" to "www.lxp.com"
+//    )
+//
+//    val site = Site13(map)
+//    println(site.name)
+//    println(site.url)
+//    println("----------")
+//    map.put("name","Google")
+//    map.put("url","www.google.com")
+//
+//    println(site.name)
+//    println(site.url)
+
+
+    var foo:Foo12 = Foo12()
+    foo.notNullBar = "bar"
+    println(foo.notNullBar)
+
+
 }
